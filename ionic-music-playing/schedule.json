@@ -1,0 +1,716 @@
+[
+  {
+    "id": 8835,
+    "date": "2018-02-24T17:16:55",
+    "date_gmt": "2018-02-24T16:16:55",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8835"
+    },
+    "modified": "2018-03-24T11:42:46",
+    "modified_gmt": "2018-03-24T10:42:46",
+    "slug": "max-drive",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=max-drive",
+    "title": {
+      "rendered": "Max Drive"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Max Drive",
+    "start_time": "17:00:00",
+    "end_time": "20:00:00",
+    "about_show": "There\u2019s only one way to get home in the evening and that\u2019s with Max Drive. All your favourite hit music with up to the minute gist, traffic news and information. It\u2019s all you need to get you home after a long, hard day.",
+    "presenter_image": {
+      "ID": "8836",
+      "post_author": "6",
+      "post_date": "2018-02-24 17:24:39",
+      "post_date_gmt": "2018-02-24 16:24:39",
+      "post_content": "",
+      "post_title": "indian-businessman-25182103",
+      "post_excerpt": "",
+      "post_status": "inherit",
+      "comment_status": "open",
+      "ping_status": "closed",
+      "post_password": "",
+      "post_name": "indian-businessman-25182103",
+      "to_ping": "",
+      "pinged": "",
+      "post_modified": "2018-03-24 11:42:46",
+      "post_modified_gmt": "2018-03-24 10:42:46",
+      "post_content_filtered": "",
+      "post_parent": "8835",
+      "guid": "https:\/\/max1023.fm\/wp-content\/uploads\/2018\/02\/indian-businessman-25182103.png",
+      "menu_order": "0",
+      "post_type": "attachment",
+      "post_mime_type": "image\/png",
+      "comment_count": "0",
+      "pod_item_id": "8836"
+    },
+    "presenters_name": "Shine",
+    "day_of_show": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "podcast_link": {
+      "ID": "2123",
+      "post_author": "1",
+      "post_date": "2017-10-13 08:59:07",
+      "post_date_gmt": "2017-10-13 08:59:07",
+      "post_content": "\"Emergency || max1023.fm from @max1023fm by  D'banj. Released: 2016. Track 1 of 1. Genre: Other.",
+      "post_title": "Emergency || Max102.3 FM",
+      "post_excerpt": "",
+      "post_status": "inherit",
+      "comment_status": "open",
+      "ping_status": "closed",
+      "post_password": "",
+      "post_name": "emergency-notjustok-com",
+      "to_ping": "",
+      "pinged": "",
+      "post_modified": "2018-03-24 11:42:46",
+      "post_modified_gmt": "2018-03-24 10:42:46",
+      "post_content_filtered": "",
+      "post_parent": "1991",
+      "guid": "http:\/\/rc1023.fm\/max\/wp-content\/uploads\/2014\/08\/DBanj-Emergency.mp3",
+      "menu_order": "0",
+      "post_type": "attachment",
+      "post_mime_type": "audio\/mpeg",
+      "comment_count": "0",
+      "pod_item_id": "2123"
+    },
+    "podcast_listen": "http:\/\/naijaloaded.store\/wp-content\/uploads\/2018\/03\/2Baba-In-Love-and-Ashes.mp3",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8835"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8835"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8835"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8834,
+    "date": "2018-02-24T17:15:50",
+    "date_gmt": "2018-02-24T16:15:50",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8834"
+    },
+    "modified": "2018-02-24T17:15:50",
+    "modified_gmt": "2018-02-24T16:15:50",
+    "slug": "wetin-dey",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=wetin-dey",
+    "title": {
+      "rendered": "Wetin Dey"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Wetin Dey",
+    "start_time": "14:00:00",
+    "end_time": "17:00:00",
+    "about_show": "Hilarious, rib-cracking radio experience with the team of no-holds-barred fun-loving voices, led by Wale PowPowPow all on a mission to excite and keep you on the edge! Trending music is applied to add zest to the fun.",
+    "presenter_image": false,
+    "presenters_name": "Wale PowPowPow",
+    "day_of_show": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8834"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8834"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8834"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8833,
+    "date": "2018-02-24T17:15:01",
+    "date_gmt": "2018-02-24T16:15:01",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8833"
+    },
+    "modified": "2018-02-24T17:15:01",
+    "modified_gmt": "2018-02-24T16:15:01",
+    "slug": "max-hits",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=max-hits",
+    "title": {
+      "rendered": "Max Hits"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Max Hits",
+    "start_time": "10:00:00",
+    "end_time": "14:00:00",
+    "about_show": "Hot, latest, hip hit music interspersed with information from the entertainment world. Set to keep you company at work and through the lunch belt. Mary, Nigeria\u2019s Two time Radio presenter of the Year award winner, sets the radio aglow and rightly wins you over!",
+    "presenter_image": false,
+    "presenters_name": "Mary Alimi",
+    "day_of_show": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8833"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8833"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8833"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8832,
+    "date": "2018-02-24T17:13:21",
+    "date_gmt": "2018-02-24T16:13:21",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8832"
+    },
+    "modified": "2018-02-24T17:13:21",
+    "modified_gmt": "2018-02-24T16:13:21",
+    "slug": "max-breakfast",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=max-breakfast",
+    "title": {
+      "rendered": "Max Breakfast"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Max Breakfast",
+    "start_time": "05:00:00",
+    "end_time": "10:00:00",
+    "about_show": "Start your day the \u201cMax\u201d way with Debbie & Mark, featuring your favourite hit music, up to the minute news, entertainment gossip, traffic and weather, giveaways and lots of fun!",
+    "presenter_image": false,
+    "presenters_name": "Mark & Debbie",
+    "day_of_show": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8832"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8832"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8832"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8710,
+    "date": "2018-02-23T09:45:26",
+    "date_gmt": "2018-02-23T08:45:26",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8710"
+    },
+    "modified": "2018-02-23T09:45:26",
+    "modified_gmt": "2018-02-23T08:45:26",
+    "slug": "max-mix",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=max-mix",
+    "title": {
+      "rendered": "Max Mix"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Max Mix",
+    "start_time": "08:00:00",
+    "end_time": "21:00:00",
+    "about_show": "Sunday evening calls for a re-bound of great thrilling music and the powerful thrust from Olayemi! The style is tied to latest information in the entertainment circuit and on-line dialoging with the listener. Fun guaranteed!",
+    "presenter_image": false,
+    "presenters_name": "Olayemi",
+    "day_of_show": "Sunday",
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8710"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8710"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8710"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8708,
+    "date": "2018-02-23T09:44:21",
+    "date_gmt": "2018-02-23T08:44:21",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8708"
+    },
+    "modified": "2018-02-23T09:44:21",
+    "modified_gmt": "2018-02-23T08:44:21",
+    "slug": "max-sports",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=max-sports",
+    "title": {
+      "rendered": "Max Sports"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Max Sports",
+    "start_time": "14:00:00",
+    "end_time": "16:00:00",
+    "about_show": "A seasoned sports show, capturing the happenings within the arena and beyond! The coordinated pace and style of presentation from Mark lifts the show to your taste and accepted standard. Call it sports, we call it sports entertainment in a cauldron of Max Hit music for Lagos!",
+    "presenter_image": false,
+    "presenters_name": "Mark",
+    "day_of_show": "Sunday",
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8708"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8708"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8708"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8707,
+    "date": "2018-02-23T09:43:17",
+    "date_gmt": "2018-02-23T08:43:17",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8707"
+    },
+    "modified": "2018-02-23T09:43:17",
+    "modified_gmt": "2018-02-23T08:43:17",
+    "slug": "max-jamz",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=max-jamz",
+    "title": {
+      "rendered": "Max Jamz"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Max Jamz",
+    "start_time": "10:00:00",
+    "end_time": "14:00:00",
+    "about_show": "Meet the \u2018Baritone\u2019, Wale Pow Pow Pow, on a return to Sunday\u2019s unique midafternoon\/lunch show. Listen to the jamz take over and the compelling audience on-line interactions make Wale\u2019s day! Join the jamz!",
+    "presenter_image": false,
+    "presenters_name": "Wale PowPowPow",
+    "day_of_show": "Sunday",
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8707"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8707"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8707"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8706,
+    "date": "2018-02-23T09:42:18",
+    "date_gmt": "2018-02-23T08:42:18",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8706"
+    },
+    "modified": "2018-02-23T09:42:18",
+    "modified_gmt": "2018-02-23T08:42:18",
+    "slug": "weekend-breakfast",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=weekend-breakfast",
+    "title": {
+      "rendered": "Weekend Breakfast"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Weekend Breakfast (Sun)",
+    "start_time": "05:00:00",
+    "end_time": "10:00:00",
+    "about_show": "Refreshingly different Sunday morning, with a mix of well channeled information timed and targeted at the listener that appreciates the quality of the Max dream. Hit music still reigns exclusively as Ibukun keeps you in the mood for a Sunday experience!",
+    "presenter_image": false,
+    "presenters_name": "Ibukun",
+    "day_of_show": "Sunday",
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8706"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8706"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8706"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8694,
+    "date": "2018-02-23T09:06:48",
+    "date_gmt": "2018-02-23T08:06:48",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8694"
+    },
+    "modified": "2018-02-24T17:06:59",
+    "modified_gmt": "2018-02-24T16:06:59",
+    "slug": "max-saturday-party-mix",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=max-saturday-party-mix",
+    "title": {
+      "rendered": "Max Saturday Party Mix"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Max Saturday Party Mix",
+    "start_time": "18:00:00",
+    "end_time": "05:00:00",
+    "about_show": "You are invited to an open door radio dance party mix! Come party till dawn with the latest selections on Max 102.3FM; Max Hits for Lagos!! The sun never sets on Saturday night.",
+    "presenter_image": false,
+    "presenters_name": "MAX FM",
+    "day_of_show": "Saturday",
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8694"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8694"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8694"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8693,
+    "date": "2018-02-23T09:05:47",
+    "date_gmt": "2018-02-23T08:05:47",
+    "guid": {
+      "rendered": "https:\/\/max1023.fm\/?post_type=schedule&#038;p=8693"
+    },
+    "modified": "2018-02-24T17:07:53",
+    "modified_gmt": "2018-02-24T16:07:53",
+    "slug": "max-sports-saturday",
+    "status": "publish",
+    "type": "schedule",
+    "link": "https:\/\/max1023.fm\/?schedule=max-sports-saturday",
+    "title": {
+      "rendered": "Max Sports"
+    },
+    "template": "",
+    "categories": [],
+    "show_title": "Max Sports",
+    "start_time": "14:00:00",
+    "end_time": "18:00:00",
+    "about_show": "A blend of hit music, coupled with live and reviewed sports analysis from both the local and international scenes. The show gives ample opportunity to listeners\u2019 on-line engagement.",
+    "presenter_image": false,
+    "presenters_name": "Omodia",
+    "day_of_show": "Saturday",
+    "podcast_link": false,
+    "podcast_listen": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule\/8693"
+        }
+      ],
+      "collection": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/schedule"
+        }
+      ],
+      "about": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/types\/schedule"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/media?parent=8693"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https:\/\/max1023.fm\/wp-json\/wp\/v2\/categories?post=8693"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https:\/\/api.w.org\/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]

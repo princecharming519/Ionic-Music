@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title style="color: white" ></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding="">
+  <div *ngIf="post!=null">
+      <div *ngIf="post.attachments.length > 0" class="max-news-image" [ngStyle]="{'background-image':'url('+post.attachments[0].url+')'}">
+          <img src="{{post.attachments[0].url}}" style="visibility: hidden;"/>
+        </div>
+    <h2 class="max-article-title" [innerHtml]="post.title"></h2>
+    <span class="max-article-detail" [innerHtml]="post.content"></span>
+  </div>
+  <div *ngIf="item!=null">
+    <!--<img *ngIf="item.attachments.length > 0"
+         src="{{item.attachments[0].url}}"/>-->
+      <div class="max-news-image" [ngStyle]="{'background-image':'url('+item.url+')'}" style="border-radius: 15px; width: 90%; height: 270px">
+      </div>
+    <h2 class="max-article-title" [innerHtml]="item.title"></h2>
+    <span class="max-article-detail" [innerHtml]="item.content"></span>
+  </div>
+
+</ion-content>

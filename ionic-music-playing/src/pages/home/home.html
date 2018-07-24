@@ -1,0 +1,145 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="color: white">MAX FM</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="max-video" id="logo-image" [@enterAnimation] style="background-image:url('assets/img/static-background.png')">
+    <!-- <div class="max-video-overlay" [style.backgroundImage]="getImageUrl(apiServices.scheduleData[0]?.presenter_image)" ></div> -->
+      <!--<span class="max-status">Live</span> <span class="max-play-btn"> </span></div>-->
+
+      <div *ngIf="radioService.isPlaying && radioService.coverArtAnimation" class="max-video-overlay" [@enterAnimation]
+           [style.backgroundImage]="getImageUrl(radioService?.radioOptions?.albumArt)"><span
+        class="max-status">Now Playing</span>
+      </div>
+
+      <div  *ngIf="radioService.isPlaying && radioService.coverArtAnimation" class="max-detail">
+        <span>{{radioService.radioOptions.song}} <br>{{radioService.radioOptions.name}}</span>
+      </div>
+
+
+      <div *ngIf="!radioService.isPlaying || !radioService.coverArtAnimation" [@enterAnimation] class="max-video-overlay" [style.backgroundImage]="getImageUrl(apiServices.scheduleData[0]?.presenter_image)">
+        <span class="max-status">Live: <span class="max-region">{{radioService?.radioOptions?.region}}</span></span> 
+        <span class="max-video-change-regionbtn" (click) = "changeRegion()" [ngStyle]="setMyStyles()">Change Region</span>
+      </div>
+
+      <div *ngIf="!radioService.isPlaying || !radioService.coverArtAnimation" class="max-detail">
+        <span> <button style="background-color: red;color: white">ON AIR NOW</button></span><br>
+        
+        <span
+          *ngIf="apiServices.scheduleData[0]">{{apiServices.scheduleData[0]?.title}}<br> With {{apiServices.scheduleData[0]?.presenters_name}}</span>
+        <span *ngIf="apiServices.scheduleData[0]" style="width: 120px">{{apiServices.scheduleData[0]?.start_time | dateConvertor : 'time'}} - {{apiServices.scheduleData[0]?.end_time | dateConvertor : 'time'}}</span>
+      </div>
+
+    <div class="max-equalizer">
+      <div id="levels">
+        <div class="level level1"></div>
+        <div class="level level2"></div>
+        <div class="level level3"></div>
+        <div class="level level4"></div>
+        <div class="level level5"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-video-upcomming"><span class="max-video-upcomming-nextbtn">next</span>
+    <div class="max-video-upcomming-list-wrapper" *ngIf="apiServices.scheduleData[1]">
+      <div class="max-video-upcomming-list">
+        <div class="max-video-upcomming-list-img"><img *ngIf="apiServices.scheduleData[1]?.presenter_image != false"
+                                                       src="{{apiServices.scheduleData[1]?.presenter_image}}"/></div>
+        <div class="max-video-upcomming-list-detail">
+          <h2>{{apiServices.scheduleData[1]?.show_title}}</h2>
+          <span style="border-bottom:0px!important;">{{apiServices.scheduleData[1]?.presenters_name}}</span>
+          <span style="border-bottom:0px!important;">{{apiServices.scheduleData[1]?.start_time | dateConvertor : 'time'}} - {{apiServices.scheduleData[1]?.end_time | dateConvertor : 'time'}}</span>
+        </div>
+      </div>
+    </div>
+    <!-- <span class="max-video-change-regionbtn" (click) = "changeRegion()">Change Region</span> -->
+    <div class="max-video-upcomming-list-wrapper" *ngIf="apiServices.scheduleData[2]">
+
+      <div class="max-video-upcomming-list">
+        <div class="max-video-upcomming-list-img"><img *ngIf="apiServices.scheduleData[2]?.presenter_image != false"
+                                                       src="{{apiServices.scheduleData[2]?.presenter_image}}"/></div>
+        <div class="max-video-upcomming-list-detail">
+          <h2>{{apiServices.scheduleData[2]?.show_title}}</h2>
+          <span style="border-bottom:0px!important;">{{apiServices.scheduleData[2]?.presenters_name}}</span>
+          <span style="border-bottom:0px!important;">{{apiServices.scheduleData[2]?.start_time | dateConvertor : 'time'}} - {{apiServices.scheduleData[2]?.end_time | dateConvertor : 'time'}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <ion-slides style="height: 300px " pager="true" paginationType="bullets" loop="true">
+      <ion-slide *ngFor="let item of feturedPhoto">
+        <img [src]="item.url" height="250" (click)="openModelPost(null, item)">
+        <p
+          style="margin-left: 25px;text-align:center; position: absolute; top:60%; color: #fff; font-family: 'Roboto', sans-serif; font-size: 20px;"
+          (click)="openModelPost(null, item)">
+          <!--<span style="font-size: 12px">{{item.date}}</span><br>-->
+          {{item.title}}</p>
+      </ion-slide>
+    </ion-slides>
+  </div>
+  
+  <div class="max-team-post">
+    <div class="max-team-post-list" *ngFor="let post of postData.posts | slice:0:5; let i = index" (click)="openModelPost(post, null)">
+      <div class="max-team-post-image"
+      *ngIf="post.attachments.length > 0"
+      [ngStyle]="{'background-image':'url('+post.attachments[0].url+')'}" ></div>
+      <div class="max-team-post-list-detail"><span>{{post.date|dateConvertor:'HOURS'}} ago</span>
+        <h2 [innerHtml]="post.title_plain"></h2>
+        <p [innerHtml]="post.excerpt"></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="max-story featured-gallery">
+    <div class="max-story-title">
+        <h2>FEATURED GALLERIES</h2>
+        <!-- <a (click)="openFeatured()">View All</a> -->
+    </div>
+    
+    <ion-slides *ngIf="sliderPhoto && sliderPhoto.length" style="height: 270px " pager="true" paginationType="bullets" loop="true">
+      <ion-slide style="text-align: center"  *ngFor="let item of sliderPhoto">
+        <img [src]="item.url" height="230" (click)="openModelPost(null, item)">
+        <p
+          style="margin-left: 25px;text-align:center; position: absolute; color: #fff;font-family: 'Roboto', sans-serif;font-size: 25px;"
+          (click)="openModelPost(null, item)">
+          <!--<span style="font-size: 12px">{{item.date}}</span><br>-->
+          {{item.title}}</p>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <!-- <div class="max-divider">
+  </div>
+  <div class="max-story featured-gallery">
+    <div class="max-story-title">
+      <h2>FEATURED GALLERIES</h2>
+      <a (click)="openFeatured()">View All</a> 
+    </div>
+    <ion-slides *ngIf="sliderPhoto && sliderPhoto.length" style="height: 320px;" pager="true" paginationType="bullets" loop="true">
+
+      <ion-slide style="width:90%; height: 300px; text-align: center" *ngFor="let item of sliderPhoto">
+
+        <img [src]="item.url" style="border-radius: 15px; width: 90%; height: 270px" (click)="openModelPost(null,item)">
+        <p
+          style="width:85%;padding-left: 10%; position: absolute;bottom:15%;color: #fff;font-family: 'Roboto', sans-serif;font-size: 25px;"
+          (click)="openModelPost(null,item)">
+          {{item.title}} 
+        </p>
+
+      </ion-slide>
+
+    </ion-slides>
+  </div> -->
+
+
+</ion-content>

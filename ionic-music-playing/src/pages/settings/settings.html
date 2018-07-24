@@ -1,0 +1,76 @@
+
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="color: white">Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding="top:5px">
+
+  <ion-list style="padding-bottom: 20%">
+  <ion-list style="background-color: whitesmoke">
+
+  <ion-card style="background-color: #870a04;" padding (click)="openSettingStationPage()">
+    <img style="width: 25px;height:30px;padding-right: 2px;float: left" src="assets/img/mic.png">
+    <p style="font-size: 18px;padding-left: 50px;padding-top: 5px;float: left;margin-top:-33px;color: white">
+      Change MAX-FM Station
+    </p>
+  </ion-card>
+
+  <ion-card style="background-color: #000000" padding (click)="openContactPRPage()">
+    <img style="width: 25px;height:30px;padding-right: 2px;float: left" src="assets/img/location.png">
+    <p style="font-size: 18px;padding-left: 50px;padding-top: 5px;float: left;margin-top:-33px;color: white">
+      Contact PR/Marketing
+    </p>
+  </ion-card>
+
+  <ion-card style="background-color: #000000"padding (click)="openProvideFeedbackPage()">
+   <!-- <a href="#" onclick="window.open('http://maxfm.thrilliant.com.ng/feedback', '_system', 'location=yes'); return false;">
+    </a>-->
+    <img style="width: 25px;padding-right: 2px;float: left" src="assets/img/comment.png">
+    <p style="font-size: 18px;padding-left: 50px;padding-top: 5px;float: left;margin-top:-33px;color: white">
+      Provide Feedback
+    </p>
+  </ion-card>
+
+    <div style="height: 50px;padding-top: 20px;padding-left: 10px"><span>Push Notifications</span>
+      <div style="float: right"><ion-toggle [(ngModel)]="pepperoni"></ion-toggle></div>
+    </div>
+  </ion-list >
+
+  <ion-list style="padding-top: 0px;height: 50px;background-color: whitesmoke">
+  <div style="padding-top: 15px;padding-left: 10px" (click) = "openTermsPage()">Terms Of Use</div>
+    <div style="float: right;;margin-top: -20px"> <ion-icon name="arrow-forward"></ion-icon></div>
+  </ion-list>
+ 
+    
+   <ion-list style="padding-top: 0px;height: 50px;background-color: whitesmoke">
+      <div  style="padding-top: 15px;padding-left: 10px"  (click) = "openCompetitionPage()">Competition Terms</div>
+      <div style="float: right;margin-top: -20px"> <ion-icon name="arrow-forward"></ion-icon></div>
+   </ion-list>
+  
+  
+    <ion-list style="padding-top: 2px;height: 50px;background-color: whitesmoke">
+      <div  style="padding-top: 15px;padding-left: 10px"  (click) = "openPrivacyPage()">Privacy Policy</div>
+      <div style="float: right;margin-top: -20px"> <ion-icon name="arrow-forward" ></ion-icon></div>
+    </ion-list>
+
+    <ion-list style="padding-top: 2px;height: 50px;background-color: whitesmoke">
+      <div  style="padding-top: 15px;padding-left: 10px"  (click) = "openPremiumratePage()"> Premium rate phone and text</div>
+      <div style="float: right;margin-top: -20px"> <ion-icon name="arrow-forward"></ion-icon></div>
+    </ion-list>
+    <ion-list style="padding-top: 2px;height: 50px;background-color: whitesmoke">
+      <div  style="padding-top: 15px;padding-left: 10px"  (click) = "openThirdPartyPage()">3rd Party License Agreement</div>
+      <div style="float: right;margin-top: -20px"> <ion-icon name="arrow-forward"></ion-icon></div>
+    </ion-list>
+    <ion-list style="padding-top: 2px;height: 100px;background-color: whitesmoke">
+    <div style="padding-left: 10px">MAX FM <br>
+      All Rights Reserved <br>
+    </div>
+  </ion-list>
+  </ion-list>
+</ion-content>

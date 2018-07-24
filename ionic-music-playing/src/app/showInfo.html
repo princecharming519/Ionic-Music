@@ -1,0 +1,36 @@
+<div style="height: 370px;width: 100%;position: absolute;top: calc(100% - 370px);">
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        <div class="max-video-upcomming-list audio">
+          <i></i>
+          <a class="max-video-upcomming-playbtn">
+            <img src="assets/img/play-up-btn.png" class="playBtn" *ngIf="!radioService.isPlaying" style="height: 40px; width: 45px;margin-top: -24px" (click)="radioService.playAudio(true)"/>
+            <img src="assets/img/stopBtn.jpg" class="playStop" *ngIf="radioService.isPlaying" style="height: 40px; width: 45px;margin-top: -24px" (click)="radioService.pauseAudio()"/>
+          </a>
+          <div class="max-video-upcomming-list-wrapper" (click)="dismiss()" style="margin-top: -24px">
+            <div class="max-video-upcomming-list-img"> <img src="assets/img/mic.png" /> </div>
+            <div class="max-video-upcomming-list-detail">
+              <h2 *ngIf="!radioService.schedulePlaying">{{radioService.radioOptions.song}}</h2>
+              <h2 *ngIf="radioService.schedulePlaying">{{radioService.showData.title}}</h2>
+              <span *ngIf="radioService.schedulePlaying">{{radioService.showData.startTime | dateConvertor : 'time'}} {{radioService.showData.endTime | dateConvertor : 'time'}}</span> </div>
+          </div>
+        </div>
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+    <ion-slides>
+      <ion-slide  *ngFor="let item of schedules | slice:1" [style.backgroundImage]="item.presenter_image ? 'url('+ item.presenter_image +')' : 'url(assets/img/dummyImage.jpg)'" style="background-size: 55% 100%;background-position: 100%;background-repeat: no-repeat">
+        <div class="bsSliderCaption"> <span class="bsday">Later Today</span>
+          <h2>{{item.title}}</h2>
+          <span class="bstime">{{item.start_time | dateConvertor : 'time'}} - {{item.end_time | dateConvertor : 'time'}}</span>
+        </div>
+        <ion-footer *ngIf="item.songUrl">
+          <button ion-button full (click)="radioService.playSchedule(item.songUrl,item.start_time,item.end_time,item.title)">Listen Again</button>
+        </ion-footer>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+
+</div>

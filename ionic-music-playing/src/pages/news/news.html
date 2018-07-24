@@ -1,0 +1,77 @@
+<!--
+  Generated template for the NewsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="color: white">NEWS, PICTURES + VIDEOS</ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="pet" id="scrollable"
+                 style="display: block;white-space: nowrap;font-size: 0;overflow: auto;background-color: #870a04;">
+
+      <ion-segment-button style="color:#ffffff;display: inline-block;min-width: 100px;width: auto;"
+                          id="segment_{{data.slug}}"
+                          [ngStyle]="pet==data.slug?{'background-color': '#534e4e'}:''"
+                          *ngFor="let data of categoryTitle?.categories"
+                          (click)="getBusinessPost(1, data.slug)"> {{data?.title}}
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <div>
+      <ion-list>
+        <div class="max-wrapper">
+          <div no-border>
+            <h3 padding class="related-header"></h3>
+          </div>
+          <div class="max-article-wrapper">
+            <div class="max-article-listing" *ngFor="let post of businessPost">
+             <!-- <div *ngIf="post.thumbnail_images">
+                <img *ngIf="post.thumbnail_images.medium_large" src="{{post.thumbnail_images.medium_large.url}}">
+              </div>-->
+              <!-- <img *ngIf="post.attachments.length > 0"
+              src="{{post.attachments[0].url}}"/> -->
+              <div *ngIf="post.attachments.length > 0" class="max-news-image" [ngStyle]="{'background-image':'url('+post.attachments[0].url+')'}">
+                <img src="{{post.attachments[0].url}}" style="visibility: hidden;"/>
+              </div>
+              <!--<div *ngIf="!post.thumbnail_images && post.thumbnail">
+                <img src="{{post.thumbnail}}">
+              </div>-->
+              <div class="max-article-listing-content">
+                <div class="max-article-listing-category">
+                  <span class="category"></span> <span class="date">{{post.date|dateConvertor}}</span>
+                </div>
+                <div>
+                  <h2 class="max-article-title" [innerHtml]="post.title" (click)="openModelData(post)"></h2>
+                </div>
+                <span class="max-article-detail" [innerHtml]="post.excerpt">
+              </span>
+                <div class="max-article-footer"><span class="time">{{post.date|dateConvertor:'HOURS'}} ago</span>
+                  <ul>
+                    <li><a href="#"><img src="assets/img/heart.png"></a></li>
+                    <li><a href="#"><img src="assets/img/share.png"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-list>
+    </div>
+  </div>
+
+  <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())" >
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading New data..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+</ion-content>
+

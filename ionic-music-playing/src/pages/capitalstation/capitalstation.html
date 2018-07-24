@@ -1,0 +1,36 @@
+<!--
+  Generated template for the CapitalstationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon  name="arrow-back" ></ion-icon>
+    </button>
+    <ion-title style="text-align: center" style="color: white">{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+<ion-list style="background-color: whitesmoke;height: 35%" >
+  <div style="padding-top: 18%;padding-left: 40%">
+  <img style="height: 70px; width:40px; alignment: center" src="assets/img/RED_location.png">
+  </div>
+  <p style="color: black;padding-top: 2%;padding-left: 25%;font-size: 20px">
+    Choose your region
+  </p>
+ </ion-list>
+  <div radio-group [(ngModel)]="relationship">
+  <ion-list style="background-color: whitesmoke;height: 10%;padding-top: 5%" *ngFor="let a of data; index as i" >
+    <div style="padding-left: 10px;font-size: 20px">{{a.region_name}}</div>
+      <div style="float: right;margin-top: -6%;padding-right: 10%">
+        <ion-radio (ionSelect) = "changeRegion(a)" value="{{a.region_name}}"> </ion-radio>
+      </div>
+
+  </ion-list>
+  </div>
+</ion-content>

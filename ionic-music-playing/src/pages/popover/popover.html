@@ -1,0 +1,48 @@
+<ion-content style="background-color: #870a04; width: 100%">
+        <div class="overlay"></div>
+        <div *ngIf="isPlaying" class="bg" [ngStyle]="{'background-image': 'url('+radioService.radioOptions.albumArt+')'}"></div>
+        <div *ngIf="!isPlaying" class="bg" [ngStyle]="{'background-image': 'url('+apiService.scheduleData[0]?.presenter_image+')'}"></div>
+    <ion-list style="padding-left: 3%" no-lines>
+        <ion-list-header text-center style="background: transparent">
+                <button ion-button icon-only (click)="close()" clear class="img2">
+                        <ion-icon name="md-arrow-round-back" color="light"></ion-icon>
+                      </button>
+            <span class="text1"> MAX FM </span>
+          </ion-list-header>
+        <ion-item (click)="presentPopover1($event)" class="icn" style="background: black">
+            <img src="assets/img/mic.png" class="img1">          
+            <span class="text"> Listen Live </span>     
+        </ion-item>
+        <ion-item (click)="openAboutPage()" class="icn">
+            <img src="assets/img/schedule.png" class="img">          
+                <span class="text" text-wrap> Schedule & Listen Again</span><br>
+        </ion-item>
+        <ion-item (click)="openNewsPage()" class="icn">
+            <img src="assets/img/pic.png" class="img">          
+                <span class="text" text-wrap> News, PIctures + Videos </span>  
+        </ion-item>
+        <ion-item (click)="openWebView()" class="icn">
+            <img src="assets/img/vote.png" class="img">          
+                <span class="text"> Opinions </span>  
+        </ion-item>
+        <ion-item (click)="openSettingsPage()" class="icn">
+            <img src="assets/img/setting.png" class="img">          
+                <span class="text"> Settings </span>  
+        </ion-item>
+        <ion-item style="background: transparent; margin-top: 10%">
+            <ion-label style="color: #fff; font-size: 1.9rem;">Datasaver</ion-label>
+            <ion-toggle [(ngModel)]="flag_datasaver" (ionChange) = "changeLowStreaming()"></ion-toggle>
+          </ion-item>
+    </ion-list>
+</ion-content>
+
+
+
+<!-- <ion-list>
+  <button ion-item (click)="close()">Listen Live</button>
+  <button ion-item (click)="close()">Schedule & Listen Again</button>
+  <button ion-item (click)="close()">News, PIctures + Videos</button>
+  <button ion-item (click)="close()">Opinions</button>
+  <button ion-item (click)="pushSignupPage()">Settings</button>
+  <button ion-item (click)="pushSignupPageNoDismiss()">Datasaver</button>
+</ion-list> -->

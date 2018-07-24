@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="color: white">SCHEDULE & LISTEN AGAIN</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div *ngFor="let data of scheduleData;let i=index">
+    <div class="accordion" id="{{i}}">
+      <div class="accordion-section">
+        <a [ngClass]=" i < currentDay?'accordion-section-title setTextColor1':i==currentDay?'accordion-section-title today setTextColor2':'accordion-section-title nextDay setTextColor2'"
+          (click)="showHideSlide(i)">
+          <span [ngClass]="i < currentDay ? 'setColor1' : 'setColor2'">{{data.date}} {{data.month}}, {{data.year}}</span>
+        </a>
+        <ion-slides *ngIf="i == showSlider" autoplay="5000" loop="true" speed="1500">
+          <ion-slide *ngFor="let item of schedules[data.day]">
+            <div class="max-schedule-listing" *ngIf="schedules[data.day]">
+              <ul class="content-slider">
+                <li [ngStyle]="{'background-image': 'url('+item.presenter_image+')'}">
+                            <span class="content-slider-overlay">
+                              <span class="content-slider-title-date">{{item.start_time | dateConvertor : 'time'}} - {{item.end_time | dateConvertor : 'time'}}</span>
+                                <span class="content-slider-title"
+                                      style="font-size: 12px;padding-left: 0px;text-align: left">{{item.title}}<br>{{item.about_show}} <button
+                                  style="margin-top: 0px;height: 25px" *ngIf="item.songUrl" class="lisAgain"
+                                  (click)="radioService.playSchedule(item.songUrl,item.start_time,item.end_time,item.title)">Listen Again</button>
+                                </span>
+                            </span>
+                </li>
+              </ul>
+            </div>
+          </ion-slide>
+          <ion-slide *ngIf="!schedules[data.day]">
+            <div class="max-schedule-listing">
+              <ul class="content-slider">
+                <li>
+                            <span class="content-slider-overlay">
+                                <span style="white-space: pre-line;font-size: 15px">No Schedules were Available on {{data.day}} </span>
+                            </span>
+                </li>
+              </ul>
+            </div>
+          </ion-slide>
+        </ion-slides>
+      </div>
+    </div>
+  </div>
+  <div style="margin-bottom: 70px"></div>
+</ion-content>

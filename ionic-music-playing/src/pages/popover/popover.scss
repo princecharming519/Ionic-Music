@@ -1,0 +1,76 @@
+page-popover {
+
+    button:focus {
+        outline: unset !important;
+        outline: unset !important;
+      }
+
+      .icn {
+        background-color: transparent;
+        color: #f4f4f4 !important;
+      }
+      
+      .icons {
+        color: #f4f4f4 !important;
+        font-size: 25px;
+        vertical-align: middle;
+        display: inline-block;
+        font-weight: bold;
+        padding-right: 10%;
+        }
+      
+        .menu-heading{
+            background-color: transparent;
+        }
+        
+        .menu-list{
+            background-color: transparent; 
+            color: #fff;
+            //font-size: px;
+            vertical-align: -webkit-baseline-middle;
+        }
+
+        .img {
+            display: inline-block;
+            font-size: 35px;
+            color: #fff;
+            vertical-align: middle;
+            max-width: 15%;
+           }
+
+           .img1 {
+            display: inline-block;
+            font-size: 25px;
+            color: #fff;
+            vertical-align: middle;
+            max-width: 10%;
+            margin-left: 5%
+           }
+
+           .img2 {
+            display: inline-block;
+            font-size: 25px;
+            color: #fff;
+            vertical-align: middle;
+            //max-width: 10%;
+            margin-left: 5%
+           }
+           
+           .text{
+             display: inline-block;
+             vertical-align: middle;
+             margin-left: 10%;
+             width: 80%;
+             font-size: 1.8rem
+           }
+      
+           .text1 {
+            display: inline-block;
+            vertical-align: middle;
+            //margin-left: 10%;
+            width: 80%;
+            font-size: 2rem;
+            color: #fff
+          }
+
+}
